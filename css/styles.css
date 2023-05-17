@@ -497,11 +497,12 @@ ul {
 }
 
 .form {
+  display: inline-block;
+  margin: 80px;
   gap: 24px;
 }
 
 .form-title {
-  margin-left: 80px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -514,9 +515,7 @@ ul {
 
 .form-footer-text {
   box-sizing: border-box;
-  position: absolute;
   border-radius: 4px;
-  border: none;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   max-width: 264px;
@@ -557,8 +556,6 @@ ul {
   align-items: center;
   padding: 8px 24px;
   gap: 16px;
-  position: absolute;
-  left: 1116px;
   background: #4d5ae5;
   border-radius: 4px;
   border: none;
@@ -808,15 +805,13 @@ ul {
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%);
-  padding: 72px 30px;
+  padding: 72px 24px 24px;
   width: 408px;
   max-height: 576px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -877,6 +872,7 @@ ul {
   display: block;
   margin-bottom: 4px;
   font-size: 10px;
+  color: #8e8f99;
 }
 
 .form-container {
@@ -893,6 +889,7 @@ ul {
   border: 1px solid;
   padding: 0;
   padding-left: 44px;
+  color: #8e8f99;
 }
 
 .modal-form-input:focus {
@@ -944,9 +941,11 @@ ul {
 
 .form-agreement {
   display: flex;
+  position: relative;
+  left: 24px;
+  top: 0;
   gap: 8px;
   align-items: center;
-  justify-content: center;
   margin-bottom: 24px;
 }
 
